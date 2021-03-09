@@ -1,0 +1,462 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+/* loading screen */
+
+.loading-screen {
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background-image: linear-gradient(180deg, #202122c2 0%,  #20212270 80%,  #20212206 100%);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
+
+.loading-screen .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-screen .intro h1 {
+    font-weight: 200;
+    color: #fff;
+}
+
+.intro-title .letter {
+    display: inline-block;
+    line-height: 2em;
+}
+
+/* backgrounds */
+
+.hero--left {
+    position: absolute;
+    height: 100vh;
+    background-size: cover;
+    background-color:white;
+    animation: animatedBackground1 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 4.8s;     
+}
+
+
+@keyframes animatedBackground1 {  
+    from {
+      background-position: 50% 50%;
+    }  
+    to {
+      background-position: 100% 50%;
+    }
+}
+
+.hero--middle {
+    background:black;
+}
+
+.imgBox img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: animatedBackground2 5s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 4.8s; 
+
+}
+
+@keyframes animatedBackground2 {
+    from {
+      width: 110%;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+
+/* backgrounds */
+
+/* content */
+
+.aboutMe {
+    position: absolute;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 85px;
+    left: 21%;
+    cursor: pointer;
+    counter-increment: itemcounter;
+}
+
+.aboutMe a{
+    text-decoration: none !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: rgb(192, 187, 187) !important;
+}
+
+a:hover {
+    color:white !important;
+}
+
+
+.link {
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+}
+
+.link::before,
+.link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: white;
+    color: white;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+.link::before {
+    content: '';
+}
+
+.link--metis {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.link--metis::before {
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+}
+
+
+
+.contact {
+    position: absolute;
+    z-index: 1;
+    line-height: 85px;
+    right: 38.5%;
+    color: #fff;
+    font-size: 14px; 
+    font-family:'Architects Daughter', cursive;
+    cursor: pointer;
+    counter-increment: itemcounter;
+}
+
+.contact a{
+    text-decoration: none !important;
+}
+
+
+.hero-title {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 20%;
+    color:white;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    font-size: 35px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.hero-title .letter {
+    display: inline-block;
+}
+
+.hero-subtitle {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 20%;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: 4px;
+    width: 44%;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+}
+
+.hero-subtitle .letter p{
+    display: inline-block;
+}
+
+
+.project {
+    position: absolute;
+    z-index: 1;
+    bottom: 7%;
+    left: 20%;
+}
+
+.project-button{
+
+    padding: 7px 17px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-family:15px;
+    font-weight: 400;
+    border : 2px solid transparent;
+    -webkit-transition : border 300ms ease-out;
+    -moz-transition : border 300ms ease-out;
+    -o-transition : border 300ms ease-out;
+    transition : border 300ms ease-out;
+    text-transform: uppercase;
+}
+
+.project-button:hover{
+    border:2px solid white;   
+}
+
+/* header */
+
+/* portafolio */
+
+section .subtitle{
+    width: 100%;
+    height: 80px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 16px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Dosis', sans-serif;
+    margin-top: 10px;
+}
+
+.container-portafolio {
+
+    margin: 0 !important;
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.image{
+    width: 450px;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    position: relative;
+  
+}
+
+.image .image__img{
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+   
+}
+
+.img__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:RGBA(69,180,167,0.3);
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.img__overlay > * {
+    transform: translateY(20px);
+    transition: 0.3s;
+    font-family: 'Dosis', sans-serif;
+}
+.img__overlay h4{
+    font-size: 33px;
+    font-weight: 600;
+    
+}
+
+.img__overlay p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 40px;
+    text-align: center;
+
+}
+.img__overlay:hover{
+    opacity: 1;
+}
+
+.img__overlay:hover > *{
+    transform: translateY(0);
+}
+
+.img_button a{
+
+    margin-top: 10px;
+    padding: 7px 17px;
+    cursor: pointer;
+    border : 2px solid white;
+    display: block;
+    transition : border 300ms ease-out;
+    text-transform: uppercase;
+    z-index: 10;
+    color: white !important;
+    transition: background-color 0.5s;
+  
+}
+
+
+.img_button a:hover{
+    background-color: black;  
+}
+
+/* portafolio */
+
+
+
+/* contact*/
+
+.container-contact{
+    background-color: RGB(255,220,200);
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    max-width: 100vw;
+    display: flex;
+}
+
+.container-contact .subtitle{
+  
+    font-weight: 600;
+}
+
+.container-contact h3{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.container-contact h3, p{
+    font-family: 'Dosis', sans-serif;
+}
+
+.contact-info{
+    margin-top: 5%;
+}
+
+.contact-info span{
+    font-weight: 800;
+}
+
+.contact-info p{
+    margin-bottom: 0;
+}
+
+
+/* footer */
+
+.container-fotter{
+
+    height: 100px;
+    background-color: black;
+    text-align: center;
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.media-icon{
+    color: white;
+}
+
+
+
+/* responsiveness */
+
+@media(max-width: 678px) {
+
+    .hero--left {
+         background: url(hero--right.jpg) no-repeat 50% 50%;
+         background-size: cover;
+    }
+
+    .hero--middle, .hero--right {
+         display: none;
+    }
+
+    .wrap {
+         display: none;
+    }
+
+    .logo {
+         left: 0%;
+         margin-left: 24px; 
+    }
+
+    .year {
+         right: 0%;
+         margin-right: 24px;
+    }
+
+    .hero-title {
+         position: absolute;
+         top: 75%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+         letter-spacing: 0px;
+         font-size: 16px;
+    }
+
+    .overlay-text {
+         display: none;
+    }
+
+    .project {
+         display: none;
+    }
+}
+
+
+@media(max-width: 798px) {
+    .intro h1 {
+         font-size: 24px;
+    }
+}
