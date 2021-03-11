@@ -22,28 +22,12 @@ header{
     width: 100%;
     height: 100vh;
     z-index: 2;
-    background-image: linear-gradient(180deg, #202122c2 0%,  #20212270 80%,  #20212206 100%);
+    background-image: linear-gradient(180deg, #2021229c 0%,  #2021228a 80%,  #2021222f 100%);
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
 
-.loading-screen .intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
-.loading-screen .intro h1 {
-    font-weight: 200;
-    color: #fff;
-}
-
-.intro-title .letter {
-    display: inline-block;
-    line-height: 2em;
-}
 
 /* backgrounds */
 
@@ -53,7 +37,7 @@ header{
     background-size: cover;
     background-color:white;
     animation: animatedBackground1 4s cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-delay: 4.8s;     
+    animation-delay: 1.5s;     
 }
 
 
@@ -71,8 +55,8 @@ header{
 }
 
 .imgBox img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 0;
     right: 0;
@@ -80,7 +64,7 @@ header{
     height: 100%;
     object-fit: cover;
     animation: animatedBackground2 5s cubic-bezier(0.19, 1, 0.22, 1);
-    animation-delay: 4.8s; 
+    animation-delay: 1.5s; 
 
 }
 
@@ -263,14 +247,13 @@ section .subtitle{
 .container-portafolio {
 
     margin: 0 !important;
-    padding-top: 20px;
     width: 100%;
     height: 100vh;
 }
 
 .image{
-    width: 450px;
-    margin-bottom: 40px;
+    width: 410px;
+    margin-bottom: 10px;
     transition: 0.5s;
     position: relative;
   
@@ -354,7 +337,7 @@ section .subtitle{
 
 .container-contact{
     background-color: RGB(255,220,200);
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     text-align: center;
     max-width: 100vw;
@@ -387,6 +370,12 @@ section .subtitle{
     margin-bottom: 0;
 }
 
+.ir-arriba{
+    margin: 20px;
+    margin-top: 35px ;
+  }
+
+
 
 /* footer */
 
@@ -405,6 +394,8 @@ section .subtitle{
 .media-icon{
     color: white;
 }
+
+
 
 
 

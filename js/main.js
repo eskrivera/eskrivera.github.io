@@ -1,28 +1,17 @@
 // intro-title animation  
-var textWrapper = document.querySelector('.intro-title');
+var textWrapper = document.querySelector('.loading-screen');
 textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false}).add({
-     targets: '.intro-title .letter',
+     targets: '',
      translateY: [40,0],
      translateZ: 0,
      opacity: [0,1],
      easing: "easeOutExpo",
-     duration: 1000,
-     delay: function(el, i) {
-     return 300 + 30 * i;
-     }
-}).add({
-     targets: '.intro-title .letter',
-     translateY: [0,-40],
-     opacity: [1,0],
-     easing: "easeInExpo",
-     duration: 1000,
+     duration: 100,
      delay: function(el, i) {
      return 100 + 30 * i;
-     }
-});
-
+     } })
 
 // hero-title animation
 var textWrapper = document.querySelector('.hero-title');
@@ -34,9 +23,9 @@ anime.timeline({loop: false}).add({
      translateZ: 0,
      opacity: [0,1],
      easing: "easeOutExpo",
-     duration: 2000,
+     duration: 1500,
      delay: function(el, i) {
-     return 8000 + 30 * i;
+     return 2000 + 30 * i;
      }
 });
 
@@ -50,35 +39,35 @@ anime.timeline({loop: false}).add({
      translateZ: 0,
      opacity: [0,1],
      easing: "easeInExpo",
-     duration: 2500,
+     duration: 1500,
      delay: function(el, i) {
-     return 9000 + 30 * i;
+     return 2000 + 30 * i;
      }
 });
 
 // reveling other elements
 TweenMax.to(".loading-screen", 2.2, {
-     delay: 3.8,
+     delay: 1,
      top: "-200%",
      ease: Expo.easeInOut
 });
 
 TweenMax.from(".aboutMe", 2, {
-     delay: 5.2,
+     delay: 3.2,
      y: 10,
      opacity: 0,
      ease: Expo.easeInOut
 });
 
 TweenMax.from(".contact", 2, {
-     delay: 5.3,
+     delay: 3.5,
      y: 20,
      opacity: 0,
      ease: Expo.easeInOut
 });
 
 TweenMax.from(".project", 2, {
-     delay: 11,
+     delay: 3.8,
      y: 10,
      opacity: 0,
      ease: Expo.easeInOut

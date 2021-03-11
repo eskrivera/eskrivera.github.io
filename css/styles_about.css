@@ -25,12 +25,11 @@ header{
 
 header h1{
     padding: 60px;
-    padding-left: 60px;
     width: 100%;
     height: 100px;
     position: relative;
     font-size: 43px;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase;
     z-index: 100;
@@ -76,7 +75,7 @@ header h1 span{
 
 .container-tools{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,13 +83,14 @@ header h1 span{
 
 .container-tools h3{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .tools{
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    margin-top: 10px;
 
 }
 
@@ -107,16 +107,66 @@ header h1 span{
 
 
 .project2 {
-    position: absolute;
-    z-index: 1;
-    bottom: -125px;
-    left: 26%;
+    position: fixed;
+    z-index: 100;
+    bottom: 7%;
+    left: 1%;
 }
 
-.herramientas {
-    position: absolute;
-    z-index: 1;
-    bottom: -125px;
-    left: 77%;
+.project2-button{
+    padding: 7px 17px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-family:15px;
+    font-weight: 400;
+    border : 2px solid transparent;
+    -webkit-transition : border 300ms ease-out;
+    -moz-transition : border 300ms ease-out;
+    -o-transition : border 300ms ease-out;
+    transition : border 300ms ease-out;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.57);
 }
+
+.project2-button:hover{
+    border:2px solid black;   
+    color: black !important;
+}
+
+.boxicon{
+    animation: arrow 0.6s ease-in-out infinite;
+}
+
+@keyframes arrow {
+    0% {
+    transform: translate(0px, 0px);
+    }
+    50% {
+    transform: translate(-6px, 0px);
+    }
+    100% {
+    transform: translate(-9px, 0px);
+    }
+    }
+
+
+
+.botones{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 22%;
+    align-items: center;
+}
+
+
+.container-certificados{
+
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+
+
 
