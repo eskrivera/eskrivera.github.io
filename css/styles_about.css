@@ -153,11 +153,12 @@ header h1 span{
 
 .botones{
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
-    justify-content: space-evenly;
-    margin-left: 22%;
+    justify-content: end;
+    margin-left: 5%;
     align-items: center;
+
 }
 
 
@@ -166,6 +167,104 @@ header h1 span{
     height: 100vh;
     margin-bottom: 50px;
 }
+
+
+/* responsive */
+
+
+@media(max-width: 1060px) {
+
+    header h1{
+        font-size: 2.3em;
+        padding-left: 0px;
+    }
+
+}
+
+
+@media(max-width: 991px) {
+
+    header {
+        background-color: black;
+        color:white;
+    }
+
+    /* header h1{
+        width: 100%;
+    } */
+
+    .img-relative{
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+
+    .box-description{
+        text-align: justify;
+        color:white;
+    }
+
+    .box-description p{
+        font-weight: 200;
+        font-size: 1.2em;
+    }
+
+    .botones a{
+        color: white !important;
+    }
+
+}
+
+@media(max-width: 768px) {
+
+    header {
+        height: 100vh;
+    }
+
+    header h1 {
+       font-size: 2em;
+       text-align: center;
+    }
+
+
+    .box-description{
+        margin-top: 10px;
+    }
+
+    .box-description p{
+        padding: 3px;
+        font-size: 1em;
+    }
+
+    .container-certificados {
+       display: flex;
+       align-items: center;
+       height: 100%;
+    }
+
+    .container-tools {
+        height: 100%;
+    }
+}
+
+ @media screen and (max-width:490px){
+
+    header {
+        height: 100%;
+    }
+    
+    header h1 {
+        font-size: 1.5em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .box-description p {
+        font-size: 13px;
+    }
+} 
 
 
 

@@ -155,6 +155,7 @@ a:hover {
     font-family:'Architects Daughter', cursive;
     cursor: pointer;
     counter-increment: itemcounter;
+    top: 5px;
 }
 
 .contact a{
@@ -248,14 +249,21 @@ section .subtitle{
 
     margin: 0 !important;
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
+.container-portafolio article:last-child{
+    margin-bottom: 30px;
+}
+
+
+
 .image{
-    width: 410px;
-    margin-bottom: 10px;
     transition: 0.5s;
     position: relative;
+
   
 }
 
@@ -399,55 +407,69 @@ section .subtitle{
 
 
 
-/* responsiveness */
+/* responsive*/
 
-@media(max-width: 678px) {
-
-    .hero--left {
-         background: url(hero--right.jpg) no-repeat 50% 50%;
-         background-size: cover;
+@media(max-width: 767px) {
+    .title{
+        color: black;
     }
 
-    .hero--middle, .hero--right {
-         display: none;
+    .hero-title{
+        font-size: 3em;
     }
 
-    .wrap {
-         display: none;
+    .hero-subtitle{
+        font-size: 1em;
+        width: 60%;
+        font-weight: 400;
     }
 
-    .logo {
-         left: 0%;
-         margin-left: 24px; 
+    .project{
+        font-size: 1em;
     }
 
-    .year {
-         right: 0%;
-         margin-right: 24px;
+    .aboutMe, .contact {
+        color:black; 
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 400;
     }
 
-    .hero-title {
-         position: absolute;
-         top: 75%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         text-align: center;
-         letter-spacing: 0px;
-         font-size: 16px;
+    .contact{
+        right: 20%;
     }
 
-    .overlay-text {
-         display: none;
+    .link {
+        font-size: 17px;
     }
 
-    .project {
-         display: none;
+    
+    .aboutMe a{
+        color: black !important;
     }
+
+    .contact a{
+        color: black !important;
+    }
+    
+    a:hover {
+        color:white !important;
+    }
+
 }
 
 
-@media(max-width: 798px) {
-    .intro h1 {
-         font-size: 24px;
+@media screen and (max-width:576px){
+
+    .hero-title{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:375px){
+
+    .contact{
+        right: 54.5%;
+        top: 8%;
     }
 }
