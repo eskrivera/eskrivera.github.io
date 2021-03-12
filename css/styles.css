@@ -464,6 +464,10 @@ section .subtitle{
     .hero-title{
         font-size: 2em;
     }
+
+    .img__overlay p {
+        display: none;
+    }
 }
 
 @media screen and (max-width:375px){
@@ -471,5 +475,30 @@ section .subtitle{
     .contact{
         right: 54.5%;
         top: 8%;
+    }
+
+    .hero-title{
+        font-size: 2em;
+    }
+
+    .project a{
+        color: rgb(119, 112, 112) !important;
+    }
+    
+}
+
+@media(max-width: 330px) {
+
+    .contact {
+        right: 50%;
+    }
+
+    .hero-title{
+        font-size: 1.5em;
+    }
+
+    .hero-subtitle{
+        font-size: 0.8em;
+        font-weight: 400;
     }
 }

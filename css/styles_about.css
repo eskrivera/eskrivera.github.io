@@ -147,11 +147,10 @@ header h1 span{
     100% {
     transform: translate(-9px, 0px);
     }
-    }
-
-
+}
 
 .botones{
+
     width: 100%;
     height: 80px;
     display: flex;
@@ -187,10 +186,6 @@ header h1 span{
         background-color: black;
         color:white;
     }
-
-    /* header h1{
-        width: 100%;
-    } */
 
     .img-relative{
         width: 30%;
@@ -248,6 +243,13 @@ header h1 span{
     }
 }
 
+@media screen and (max-width:590px){
+    .botones {
+        left: 50%;
+}
+
+}
+
  @media screen and (max-width:490px){
 
     header {
@@ -263,8 +265,22 @@ header h1 span{
     .box-description p {
         font-size: 13px;
     }
+
+    .botones {
+        left: 40%;
+    }
 } 
 
+@media screen and (max-width:400px){
+    .botones {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 60%;
+    }
+    
+    .herramientas{
+        margin-bottom: 10px;
+    }
 
-
-
+}
