@@ -1,5 +1,4 @@
 
-// AOS.init();
 
 var regreso = document.getElementById("regreso");
 var boxicon = document.getElementById("boxicon");
