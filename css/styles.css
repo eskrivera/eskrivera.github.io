@@ -249,7 +249,7 @@ section .subtitle{
 
     margin: 0 !important;
     width: 100%;
-    max-height: 100vh;
+    max-height: 100%;
     display: flex;
     align-items: center;
 }
@@ -278,7 +278,7 @@ section .subtitle{
     position: absolute;
     top: 0;
     left: 0;
-    background:RGBA(69,180,167,0.3);
+    background:#ffdbc5d9;
     color: white;
     width: 100%;
     height: 100%;
@@ -304,9 +304,10 @@ section .subtitle{
 
 .img__overlay p{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     padding: 0 40px;
     text-align: center;
+    color: black;
 
 }
 .img__overlay:hover{
