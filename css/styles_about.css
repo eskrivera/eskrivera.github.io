@@ -6,7 +6,7 @@
 }
 
 a{
-    color: black !important;
+    color: white !important;
     font-weight: 800;
     font-size: 15px;
 }
@@ -19,8 +19,8 @@ a{
 header{
     width: 100%;
     height: 100vh;
-    background-color:RGB(255,220,200);
-    color: black;
+    background-color:black;
+    color: white;
 }
 
 header h1{
@@ -44,19 +44,19 @@ header h1 span{
 
 .box-description{
     text-align: justify;
-    padding-top: 5%;
+    padding-top: 15%;
     padding-left: 25%;
     padding-right: 5%;
-    color: black;
+    color: white;
     font-weight: 200;
 }
 
 
 .box-img img{
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     border-radius: 500px;
-    margin-top: 30%;
+    margin-top: 35%;
     margin-left: 15%;
 }
 
@@ -75,7 +75,7 @@ header h1 span{
 
 .container-tools{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,22 +150,19 @@ header h1 span{
 }
 
 .botones{
-
-    width: 100%;
+    width: 70%;
     height: 80px;
     display: flex;
     position: relative;
-    left: 60%;
-    top:-3px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 .container-certificados{
-
-    height: 100vh;
+    height: 100%;
     margin-bottom: 50px;
 }
-
 
 /* responsive */
 

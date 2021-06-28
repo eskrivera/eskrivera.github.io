@@ -270,7 +270,7 @@ section .subtitle{
 .image .image__img{
     display: block;
     width: 100%;
-    border-radius: 2px;
+    border-radius: 20px;
    
 }
 
@@ -278,7 +278,7 @@ section .subtitle{
     position: absolute;
     top: 0;
     left: 0;
-    background:#ffdbc5d9;
+    background:rgba(56, 37, 55, 0.583);
     color: white;
     width: 100%;
     height: 100%;
@@ -289,6 +289,7 @@ section .subtitle{
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.5s;
+    border-radius: 20px;
 }
 
 .img__overlay > * {
@@ -307,7 +308,7 @@ section .subtitle{
     font-weight: 600;
     padding: 0 40px;
     text-align: center;
-    color: black;
+    color: white;
 
 }
 .img__overlay:hover{
