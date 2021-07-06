@@ -96,6 +96,7 @@ header h1 span{
 
 .tools h4 {
     text-align: center;
+    font-size: 1rem;
 }
 
 .tools img{
@@ -211,7 +212,7 @@ header h1 span{
 @media(max-width: 768px) {
 
     header {
-        height: 100vh;
+        height: 100%;
     }
 
     header h1 {
@@ -221,7 +222,7 @@ header h1 span{
 
 
     .box-description{
-        margin-top: 10px;
+        padding-top: 7%;
     }
 
     .box-description p{
@@ -238,11 +239,28 @@ header h1 span{
     .container-tools {
         height: 100%;
     }
+
+    .botones {
+        width: 70%;
+        height: 80px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 40px;
+    }
 }
 
 @media screen and (max-width:590px){
     .botones {
-        left: 50%;
+        display:none;
+}
+    .project2-button{
+        display: none;
+}
+
+.box-description{
+    padding-top: 4%;
 }
 
 }
@@ -262,19 +280,9 @@ header h1 span{
     .box-description p {
         font-size: 13px;
     }
-
-    .botones {
-        left: 40%;
-    }
 } 
 
 @media screen and (max-width:400px){
-    .botones {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 60%;
-    }
     
     .herramientas{
         margin-bottom: 10px;
